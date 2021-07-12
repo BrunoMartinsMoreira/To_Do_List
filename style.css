@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
-  
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap");
+
 * {
   box-sizing: border-box;
   outline: 0;
@@ -8,70 +8,89 @@
 body {
   margin: 0;
   padding: 0;
-  background: url('./img/bg1.jpg') no-repeat content-box;
+  background: url("./img/bg3.jpg") no-repeat content-box;
   background-size: cover;
-  font-family: 'Open sans', sans-serif;
+  font-family: "Open sans", sans-serif;
   font-size: 10px;
   line-height: 1.5rem;
 }
-.glass{
-  backdrop-filter: blur(.2rem);
+.glass {
+  backdrop-filter: blur(0.4rem);
 }
 
 .container {
-  max-width: 70vw;
+  max-width: 60vw;
   margin: 5rem auto;
-  background:rgba(255 , 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.2);
   padding: 2rem;
   border-radius: 1rem;
   text-align: center;
 }
-h1{
+h1 {
   font-size: 2rem;
   font-weight: 400;
   padding-bottom: 1rem;
-  border-bottom: .1rem solid #000;
+  border-bottom: 0.1rem solid #000;
 }
 
-.lista-input{
+.lista-input {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
 
-.input-tarefa{
+.input-tarefa {
   width: 40%;
-  padding: .2rem;
+  padding: 0.2rem;
   outline: none;
-  border: #000 .01rem solid;
-  border-radius: .2rem 0 0 .2rem;
+  border: #000 0.01rem solid;
+  border-radius: 0.2rem 0 0 0.2rem;
   font-size: 1rem;
-  background: rgba(255 , 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.5);
 }
-.btn-tarefa{
-  padding: .2rem;
-  border: #000 .01rem solid;
-  border-radius: 0 .2rem .2rem 0;
+.btn-tarefa {
+  padding: 0.2rem;
+  border: #000 0.01rem solid;
+  border-radius: 0 0.2rem 0.2rem 0;
   text-transform: uppercase;
   color: rgba(49, 233, 33, 0.993);
   background: rgba(27, 27, 27, 0.89);
   font-size: 1rem;
-  transition: .3s;
+  transition: 0.2s;
 }
-.btn-tarefa:hover{
-  color: rgba(27, 27, 27) ;
-  background: rgba(49, 233, 33, 0.993);
-  opacity: .7;
+.btn-tarefa:hover {
+  color: rgba(35, 207, 19, 0.993);
+  background: rgba(48, 47, 47, 0.89);
 }
-.lista-de-tarefas{
+.lista-de-tarefas {
   display: flex;
-  justify-content:left;
+  justify-content: left;
+  text-align: left;
+  align-items: center;
+}
+.lista-de-tarefas ul li {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+.lista-de-tarefas ul li.checked {
+  background: #67b45a;
+}
+.apagar {
+  border: none;
+  background: #ca063093;
+  color: whitesmoke;
+  padding: 0.2rem 0.4rem;
+  border-radius: 0.3rem;
+  transition: 0.1s;
+  cursor: pointer;
+}
+.apagar:hover {
+  background: #ec093a93;
 }
 
-
-
-
-
-
-
+@media (max-width: 720px) {
+  .container {
+    max-width: 97vw;
+  }
+}
