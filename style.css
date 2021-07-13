@@ -19,7 +19,7 @@ body {
 }
 
 .container {
-  max-width: 60vw;
+  max-width: 75vw;
   margin: 5rem auto;
   background: rgba(255, 255, 255, 0.2);
   padding: 2rem;
@@ -89,7 +89,7 @@ h1 {
   background: #ec093a93;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 800px) {
   .container {
     max-width: 97vw;
   }
